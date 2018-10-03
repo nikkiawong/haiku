@@ -3,6 +3,8 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { findVowels } from './haiku.js';
+import { sliceE } from './haiku.js';
+import { sliceExtraVowel } from './haiku.js';
 
 $(document).ready(function() {
   $(".haiku-form").submit(function() {
@@ -10,6 +12,11 @@ $(document).ready(function() {
     let userInput = $("input[type='text']").val();
 
     let vowelCount = findVowels(userInput);
-    console.log(vowelCount);
+    let slicedWord = sliceE(userInput);
+
+    // console.log(slicedWord.join(" "));
+
+    let lessVowelsWord = sliceExtraVowel(userInput);
+    console.log(lessVowelsWord);
   });
 });
