@@ -11,12 +11,13 @@ $(document).ready(function() {
     event.preventDefault();
     let userInput = $("input[type='text']").val();
 
-    let vowelCount = findVowels(userInput);
     let slicedWord = sliceE(userInput);
+    console.log("slicedWord: " + slicedWord);
 
-    // console.log(slicedWord.join(" "));
+    let lessVowelsWord = sliceExtraVowel(slicedWord);
+    console.log("lessVowelsWord: " + lessVowelsWord);
 
-    let lessVowelsWord = sliceExtraVowel(userInput);
-    console.log(lessVowelsWord);
+    let syllableCount = findVowels(lessVowelsWord);
+    console.log("Number of Syllables: " + syllableCount);
   });
 });

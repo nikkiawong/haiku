@@ -1,8 +1,8 @@
 const vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'];
 
-export function findVowels(userInput) {
-  let allLetters = userInput.split("");
-  let filteredArray = allLetters.filter(filterVowels);
+export function findVowels(lessVowelsWord) {
+  // let allLetters = slicedWord.split("");
+  let filteredArray = lessVowelsWord.filter(filterVowels);
 
   function filterVowels(el) {
     return vowels.indexOf(el) > -1;
@@ -25,8 +25,9 @@ export function sliceE(userInput) {
   return words;
 }
 
-export function sliceExtraVowel(userInput) {
-  let letters = userInput.split("");
+export function sliceExtraVowel(slicedWord) {
+  let letters = slicedWord.toString();
+  letters = letters.split("");
 
   letters.forEach(function(char, i, array) {
 
@@ -44,7 +45,7 @@ export function sliceExtraVowel(userInput) {
 
 
   })
-  console.log(letters);
+
   return letters;
 
 }

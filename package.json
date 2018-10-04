@@ -1,7 +1,7 @@
 {
   "name": "project-name-here",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### Epicodus JavaScript exercise, Date",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -42,5 +42,13 @@
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikkiawong/haiku.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikkiawong/haiku/issues"
+  },
+  "homepage": "https://github.com/nikkiawong/haiku#readme"
 }
