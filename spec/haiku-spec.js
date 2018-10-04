@@ -1,6 +1,7 @@
 import { findVowels } from '../src/haiku.js';
 import { sliceE } from '../src/haiku.js';
 import { sliceExtraVowel } from '../src/haiku.js';
+import { checkFiveSyllables } from '../src/haiku.js';
 
 describe('haiku checker', function() {
 
@@ -22,5 +23,10 @@ describe('haiku checker', function() {
   it('should remove the second and third vowels if there are three consecutive vowels', function() {
     let tripleVowelWord = "you";
     expect(sliceExtraVowel(tripleVowelWord)).toEqual(['y']);
+  });
+
+  it('should test whether line 1 or line 3 contain 5 syllables', function() {
+    let numberOfSyllables = 5;
+    expect(checkFiveSyllables(numberOfSyllables)).toEqual(true);
   });
 });

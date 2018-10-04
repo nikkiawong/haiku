@@ -7,9 +7,21 @@
   <div class="container">
     <h1>Haiku Checker</h1>
     <form class="haiku-form">
-      <input type="text" name="haiku-input">
+      <label for="first-line">Line 1 (5 syllables)</label>
+      <input type="text" name="first-line">
+      <label for="second-line">Line 2 (7 syllables)</label>
+      <input type="text" name="second-line">
+      <label for="third-line">Line 3 (5 syllables)</label>
+      <input type="text" name="third-line">
       <button type="submit" name="button">Submit</button>
     </form>
+
+    <div class="result">
+      <p>Line 1: <span id="line1"></span></p>
+      <p>Line 2: <span id="line2"></span></p>
+      <p>Line 3: <span id="line3"></span></p>
+      <p id="final"><span id="passFail"></span></p>
+    </div>
   </div>
 </body>
 </html>

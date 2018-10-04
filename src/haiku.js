@@ -49,3 +49,27 @@ export function sliceExtraVowel(slicedWord) {
   return letters;
 
 }
+
+export function checkFiveSyllables(syllableCount1) {
+  if (syllableCount1 === 5) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+export function checkSevenSyllables(syllableCount2) {
+  if (syllableCount2 === 7) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+export function checkFullHaiku(check, check2, check3) {
+  if (check === true && check2 === true && check3 === true) {
+    return "This is a haiku!";
+  } else {
+    return "This is not a haiku";
+  }
+}

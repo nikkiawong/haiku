@@ -1,0 +1,27 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.result {
+  display: none;
+}
+
+#final {
+  margin-top: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
